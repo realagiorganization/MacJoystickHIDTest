@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+echo "[pre-commit] Running make test..."
+if ! make test; then
+  echo "[pre-commit] Tests failed. Aborting commit." >&2
+  exit 1
+fi

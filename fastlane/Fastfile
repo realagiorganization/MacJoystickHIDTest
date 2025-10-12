@@ -1,0 +1,8 @@
+default_platform(:mac)
+
+platform :mac do
+  desc "Run macOS visual validation build"
+  lane :visual_tests do
+    sh("./scripts/visual-tests-core.sh")
+  end
+end
