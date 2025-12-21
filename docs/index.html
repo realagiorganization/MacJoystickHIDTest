@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mac Joystick HID Test</title>
+    <meta
+      name="description"
+      content="A lightweight Mac utility to inspect joystick axes, buttons, and hat switches through HID."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-orbit"></div>
+    <div class="bg-grid"></div>
+
+    <header class="hero">
+      <div class="hero-content">
+        <p class="kicker" data-reveal>Mac Utility</p>
+        <h1 data-reveal>Joystick HID Test</h1>
+        <p class="lead" data-reveal>
+          Inspect joystick orientation, map buttons, and verify every axis with
+          a tidy, no-nonsense macOS helper built on HID.
+        </p>
+        <div class="hero-actions" data-reveal>
+          <a class="btn primary" href="#download">Get the App</a>
+          <a class="btn ghost" href="#how">How It Works</a>
+        </div>
+        <div class="hero-meta" data-reveal>
+          <div>
+            <span class="label">Targets</span>
+            <span class="value">macOS + USB HID</span>
+          </div>
+          <div>
+            <span class="label">Focus</span>
+            <span class="value">Axes, Buttons, Hats</span>
+          </div>
+          <div>
+            <span class="label">Author</span>
+            <span class="value">Oriol Ferrer Mesia</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-card" data-reveal>
+        <div class="card-header">
+          <span>Live Readout</span>
+          <span class="status">Connected</span>
+        </div>
+        <div class="card-body">
+          <div class="meter">
+            <span>Axis X</span>
+            <div class="bar"><div style="width: 72%"></div></div>
+          </div>
+          <div class="meter">
+            <span>Axis Y</span>
+            <div class="bar"><div style="width: 38%"></div></div>
+          </div>
+          <div class="meter">
+            <span>Throttle</span>
+            <div class="bar"><div style="width: 55%"></div></div>
+          </div>
+          <div class="button-grid">
+            <span class="pill active">B1</span>
+            <span class="pill">B2</span>
+            <span class="pill">B3</span>
+            <span class="pill active">B4</span>
+            <span class="pill">B5</span>
+            <span class="pill">B6</span>
+          </div>
+        </div>
+        <div class="card-footer">Hat switch: NE</div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section" id="how">
+        <div class="section-header" data-reveal>
+          <h2>Built for quick diagnostics</h2>
+          <p>
+            Identify inputs instantly when calibrating a rig, building a custom
+            controller, or validating a new joystick. The UI keeps the signal
+            loud and clear.
+          </p>
+        </div>
+        <div class="grid">
+          <article class="panel" data-reveal>
+            <h3>Axes + Hats</h3>
+            <p>
+              Track continuous axis values and hat switch direction with
+              visualized ranges and snap points.
+            </p>
+          </article>
+          <article class="panel" data-reveal>
+            <h3>Button Mapping</h3>
+            <p>
+              Press any button and see the exact HID identifier, perfect for
+              binding flight sim or robotics controls.
+            </p>
+          </article>
+          <article class="panel" data-reveal>
+            <h3>Native macOS</h3>
+            <p>
+              Lightweight Objective-C app built on IOKit HID for reliable,
+              low-latency polling.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section highlight" id="download">
+        <div class="section-header" data-reveal>
+          <h2>Grab the source, ship the build</h2>
+          <p>Open the project in Xcode and run locally in minutes.</p>
+        </div>
+        <div class="steps" data-reveal>
+          <div class="step">
+            <span>1</span>
+            <p>Clone the repo and open `JoystickHIDTest.xcodeproj`.</p>
+          </div>
+          <div class="step">
+            <span>2</span>
+            <p>Attach your joystick or controller via USB.</p>
+          </div>
+          <div class="step">
+            <span>3</span>
+            <p>Run and watch the axes and buttons light up live.</p>
+          </div>
+        </div>
+        <div class="cta" data-reveal>
+          <a
+            class="btn primary"
+            href="https://github.com/realagiorganization/MacJoystickHIDTest"
+          >
+            View on GitHub
+          </a>
+          <a class="btn ghost" href="#preview">Preview UI</a>
+        </div>
+      </section>
+
+      <section class="section" id="preview">
+        <div class="section-header" data-reveal>
+          <h2>Interface preview</h2>
+          <p>The 2019 interface still looks clean and functional today.</p>
+        </div>
+        <div class="image-frame" data-reveal>
+          <img
+            src="images/interface_2019.png"
+            alt="Joystick HID Test interface preview"
+            loading="lazy"
+          />
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Mac Joystick HID Test is an open-source utility by Oriol Ferrer Mesia.</p>
+      <p>Maintained by RealAGI for quick hardware validation.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
