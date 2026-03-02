@@ -1,0 +1,24 @@
+Prompt ID: prompts_mac_joystick_hid_test-p00014-9d57fb
+Timestamp: 2026-03-02T12:35:27.524182+00:00
+Source: discord
+Queue: 9d8a5604ddb5479ca753949b931045bb::prompt_queue::discord_1353735964635435100_1353735964635435100_1452013931509055618_realagicorp_core2_prompts_mac_joystick_hid_test_1452013931509055618_json
+Run: 1/1
+Content:
+Discord channel: prompts_mac_joystick_hid_test
+Channel ID: 1452013931509055618
+Queue label: prompts_mac_joystick_hid_test
+Messages aggregated: 3
+Available repository: realagiorganization/MacJoystickHIDTest -> /tmp/repositories/realagiorganization_MacJoystickHIDTest
+
+Discord channel: prompts_mac_joystick_hid_test | ID: 1452013931509055618 | Reaction filter: :white_check_mark:
+
+Messages with required reaction:
+[1] (2025-12-20T19:06:28.274+00:00 | realagiadmin_29264 | id=1452014308526657686) test/screenshot github pages website in https://github.com/realagiorganization/MacJoystickHIDTest in the usual separate branch
+Attachments: image.png: /out/1353735964635435100/_media/image-d3288.png ; image.png: /out/1353735964635435100/_media/image-3c64d.png ; image.png: /out/1353735964635435100/_media/image-4f05e.png
+[2] (2025-12-20T19:17:48.051+00:00 | realagiadmin_29264 | id=1452017159717912768) test/screenshot github pages website in https://github.com/realagiorganization/MacJoystickHIDTest in the usual separate branch
+Attachments: image.png: /out/1353735964635435100/_media/image-ccd3b.png ; image.png: /out/1353735964635435100/_media/image-0f112.png
+[3] (2026-01-25T20:16:56.161+00:00 | realagiadmin_29264 | id=1465078004731482404) Create DEVPLAN.md outlining steps for developing this project, mention there all external dependencies that leverage parts of functionality needed
+
+Create BDD test suite describing principal use cases
+
+Create GitHub actions launching BDD suite and add its badge to README. If behavior includes either console or UI / Web user interaction, record it with vhs action and post gif into README

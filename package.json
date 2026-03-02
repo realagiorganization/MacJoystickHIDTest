@@ -1,0 +1,31 @@
+{
+  "name": "mac-joystick-hid-test",
+  "version": "1.0.0",
+  "description": "Mac joystick HID tester with static docs preview and BDD coverage.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "npm run test:bdd",
+    "test:bdd": "PLAYWRIGHT_BROWSERS_PATH=./.playwright cucumber-js --require tests/support/**/*.js --require tests/steps/**/*.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/realagiorganization/MacJoystickHIDTest.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/realagiorganization/MacJoystickHIDTest/issues"
+  },
+  "homepage": "https://github.com/realagiorganization/MacJoystickHIDTest#readme",
+  "devDependencies": {
+    "@cucumber/cucumber": "^12.7.0",
+    "playwright": "^1.58.2"
+  }
+}
